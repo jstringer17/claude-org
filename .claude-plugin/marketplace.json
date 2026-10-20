@@ -1,0 +1,5 @@
+{
+  "name": "claude-org",
+  "owner": { "name": "jstringer17" },
+  "plugins": [{ "name": "org", "source": "./" }]
+}
