@@ -17,7 +17,7 @@ The shared record lives in `org/` in each project (BRIEF, TASKS, DECISIONS, SCOR
 
 ## Team jobs, from your phone
 
-Say "team job" (typing or dictating) for anything too big for one session. The planner writes `org/plan.md` and one handoff file per workstream. You approve the plan in a few lines. The chief of staff then starts one cloud session per handoff (at most 3 unless you raise it), on Sonnet unless the work truly needs Opus. The sessions ask each other questions directly. Only questions for you reach your phone, and results come back as a private link you can open there. Fable is never used.
+Say "team job" (typing or dictating) for anything too big for one session. The planner writes `org/plan.md` and one handoff file per workstream. You approve the plan in a few lines. The chief of staff then starts one cloud session per handoff (at most 3 unless you raise it), on Sonnet unless the work truly needs Opus. The sessions ask each other questions directly. Only questions for you reach your phone, and results arrive in your Gmail (only ever to your own address), with a private link to the full result. Fable is never used.
 
 Type `/org` to open the board: task counts from `org/TASKS.md`, who is working on what, and the messages agents send each other.
 

@@ -67,6 +67,7 @@ Team jobs (the CEO says "team job", or the work needs more than one session; the
 2. On yes, commit, then start one cloud session per handoff with create_session: prompt = "Run org/handoffs/<name>.md", the handoff's model, tag org:<project>. Never Fable. At most 3 sessions unless the CEO raises it.
 3. Sessions ask each other with send_message. A question only the CEO can answer goes to their phone with PushNotification, in one line.
 A session whose first message says "Run org/handoffs/<name>.md" is that workstream's lead, not chief of staff: follow the file, delegate inside it the same way, update only its own files and the handoff, commit, and report to the session that started it with send_message.
-4. Track each session as a TASKS.md row (owner = session id); check it with get_session, not by redoing its work. Deliver results as a private Artifact link the CEO can open on the phone.
+4. Track each session as a TASKS.md row (owner = session id); check it with get_session, not by redoing its work.
+5. Deliver results to the CEO's inbox when Gmail is connected: one email per finished job, sent only to the CEO's own address (ask once, keep it in BRIEF.md), subject "[org] <project>: <job>", a short HTML summary in the body and a private Artifact link to the full result. Without Gmail, give the link in chat. Never email anyone else.
 
 Each session: read HANDOFF.md, then only what it points to. Give a 3-line status and the current bottleneck. Agree the goal. At the end, update org/ with a fresh HANDOFF.md and commit. Weekly: review the scorecard. If the CEO repeats something already decided, fix the record first. /org shows the board.`
