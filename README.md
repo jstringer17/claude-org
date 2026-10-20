@@ -38,5 +38,3 @@ claude plugin install org --marketplace jstringer17/claude-org
 ```
 
 In the desktop app, where `/plugin` does not run: click + next to the prompt box, then Plugins, Add marketplace with `jstringer17/claude-org`, then Add plugin.
-
-The repository is private, so installing needs GitHub access to it on that computer.
