@@ -1,1 +1,1 @@
-{ "name": "org", "version": "0.1.0", "description": "Runs every session as an organization: a chief of staff delegating to a small, cost-aware team, with a task board and message feed", "license": "MIT", "types": "./types/index.d.ts" }
+{ "name": "org", "version": "0.1.1", "description": "Runs every session as an organization: a chief of staff delegating to a small, cost-aware team, with a task board and message feed", "license": "MIT", "types": "./types/index.d.ts" }

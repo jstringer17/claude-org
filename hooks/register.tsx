@@ -70,7 +70,9 @@ export const register: Register = on => {
 
   on('agent.spawn', async ($, e, next) => {
     if (e.fork || e.resume || e.workflow) return next(e)
-    const model = e.model ?? BUILT_IN_MODEL[e.subagentType]
+    // Fable is off for now: a request for it runs on Opus instead.
+    const asked = e.model !== undefined && /fable/i.test(e.model) ? 'opus' : e.model
+    const model = asked ?? BUILT_IN_MODEL[e.subagentType]
     const started = await next(model === undefined ? e : { ...e, model })
     if (started.agentId !== undefined) {
       const role = e.name ?? e.subagentType.replace(/^org:/, '')

@@ -10,7 +10,7 @@ Runs every Claude Code session like an organization. The main session is the chi
 | org:analyst | Sonnet | judging results against rules set in advance |
 | org:runner | Haiku | small jobs |
 
-Built-in agent types that carry no model are routed too: general-purpose to Sonnet, Plan to Opus, Explore to Haiku.
+Built-in agent types that carry no model are routed too: general-purpose to Sonnet, Plan to Opus, Explore to Haiku. Fable is off for now: any request for it runs on Opus.
 
 The shared record lives in `org/` in each project (BRIEF, TASKS, DECISIONS, SCORECARD, HANDOFF, playbooks/), so any new session picks up where the last one stopped. Projects add their own department leads as agent files in `.claude/agents/`.
 

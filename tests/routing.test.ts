@@ -25,3 +25,10 @@ test('a model the caller chose, or an agent with its own, is left alone', async 
   expect((await $.agent.spawn({ ...SPAWN, subagentType: 'general-purpose', model: 'opus' })).model).toBe('opus')
   expect((await $.agent.spawn({ ...SPAWN, subagentType: 'org:builder' })).model).toBe('own')
 })
+
+test('a request for Fable runs on Opus', async ($, on) => {
+  on('agent.spawn', (_, e) => ({ model: e.model ?? 'own', agentId: 'a-1' }))
+
+  expect((await $.agent.spawn({ ...SPAWN, subagentType: 'general-purpose', model: 'fable' })).model).toBe('opus')
+  expect((await $.agent.spawn({ ...SPAWN, subagentType: 'org:builder', model: 'claude-fable-5-1' })).model).toBe('opus')
+})
